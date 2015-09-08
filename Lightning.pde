@@ -32,13 +32,13 @@ class LightingL
   void show()
   {
     int c = (int)(Math.random()*110);
-    while(endLX > 0)
+    while(endLX > 0)//stop when go off
     {
-    	stroke(10, 100+c, 150+c);
+    	stroke(10, 100+c, 150+c);//diff color from white to blue
     	endLY = startLY - (int)(Math.random()*20);
     	endLX = startLX - (int)(Math.random()*15);
     	line(startLX, startLY, endLX, endLY);
-    	startLX = endLX;
+    	startLX = endLX;//start over, re[eat the process
     	startLY = endLY;
     }
   }
@@ -54,11 +54,11 @@ class LightingR
   void show()
   {
     int c = (int)(Math.random()*110);
-    while(endRX>0)
+    while(endRX < 400)//stop when go off
     {
       stroke(10, 100+c, 150+c);
       endRY = startRY - (int)(Math.random()*20);
-      endRX = startRX - (int)(Math.random()*15);
+      endRX = startRX + (int)(Math.random()*15);
       line(startRX, startRY, endRX, endRY);
       startRX = endRX;
       startRY = endRY;
