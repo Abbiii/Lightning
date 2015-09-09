@@ -2,7 +2,7 @@ PImage Pikachu;
 
 void setup()
 {
-  Pikachu = loadImage("Pikachu.png"); 
+  Pikachu = loadImage("http://memberfiles.freewebs.com/47/74/57487447/photos/POKEMON/Pikachu_thunderbolt.png"); 
   size(400, 400);
   strokeWeight(1);
   background(100);
