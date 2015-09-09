@@ -2,7 +2,7 @@ PImage Pikachu;
 
 void setup()
 {
-  Pikachu = loadImage("http://memberfiles.freewebs.com/47/74/57487447/photos/POKEMON/Pikachu_thunderbolt.png"); 
+  Pikachu = loadImage("http://memberfiles.freewebs.com/47/74/57487447/photos/POKEMON/Pikachu_thunderbolt.png"); //load image
   size(400, 400);
   strokeWeight(1);
   background(100);
@@ -38,13 +38,13 @@ class LightingL
     	endLY = startLY - (int)(Math.random()*20);
     	endLX = startLX - (int)(Math.random()*15);
     	line(startLX, startLY, endLX, endLY);
-    	startLX = endLX;//start over, re[eat the process
+    	startLX = endLX;//start over, repeat the process
     	startLY = endLY;
     }
   }
 }
 
-class LightingR
+class LightingR // same thing as LightningL
 {
   int startRX = 223;
   int startRY = 331;
