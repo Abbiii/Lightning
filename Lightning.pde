@@ -1,4 +1,6 @@
 PImage Pikachu; 
+LightingL left;
+LightingR right;
 
 void setup()
 {
