@@ -1,6 +1,6 @@
 PImage Pikachu; 
-LightingL left;
-LightingR right;
+LightingL zuo;
+LightingR you;
 
 void setup()
 {
@@ -17,10 +17,10 @@ void draw()
   tint(255,126);//transparent
   for (int i=0; i<5; i++)
   {
-    LightingL left = new LightingL();
-    left.show();
-    LightingR right = new LightingR();
-    right.show();
+    LightingL zuo = new LightingL();
+    zuo.show();
+    LightingR you = new LightingR();
+    you.show();
   }
 }
 
@@ -39,7 +39,7 @@ class LightingL
     	stroke(10, 100+c, 150+c);//diff color from white to blue
     	endLY = startLY - (int)(Math.random()*20);
     	endLX = startLX - (int)(Math.random()*15);
-    	line(startLX, startLY, endLX, endLY);
+    	line(startLX, startLY, endLX, endLY);//draw one step of the lightning
     	startLX = endLX;//start over, repeat the process
     	startLY = endLY;
     }
@@ -55,10 +55,10 @@ class LightingR // same thing as LightningL
   
   void show()
   {
-    int c = (int)(Math.random()*110);
+    int s = (int)(Math.random()*110);
     while(endRX < 400)//stop when go off
     {
-      stroke(10, 100+c, 150+c);
+      stroke(10, 100+s, 150+s);
       endRY = startRY - (int)(Math.random()*20);
       endRX = startRX + (int)(Math.random()*15);
       line(startRX, startRY, endRX, endRY);
