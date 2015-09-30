@@ -7,7 +7,6 @@ void setup()
   size(400, 400);
   Pikachu = loadImage("http://memberfiles.freewebs.com/47/74/57487447/photos/POKEMON/Pikachu_thunderbolt.png"); //load image
   strokeWeight(1);
-  background(100);
   frameRate(15);
 }
 
